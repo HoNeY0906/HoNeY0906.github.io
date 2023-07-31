@@ -1,0 +1,239 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+    /* food m  ye kiya tha  */
+}
+
+
+/* Navigation Bar: Logo and Images */
+#logo {
+    margin: 0px -26px;
+}
+
+#logo img {
+    height: 65px;
+    margin: 2px 85px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 0px 27px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Baloo Bhai 2', cursive;
+    font: bold;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 200px;
+    height: 595px;
+    /*333px;*/
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('../img/backg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 95%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.99;
+}
+
+#home h1 {
+    font-family: 'Baloo Bhai 2', cursive;
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhai 2', cursive;
+
+    /* padding: 1px; */
+}
+
+/* Services section */
+
+#services {
+    /* margin: 34px; */
+    display: flex;
+}
+/* .services-container::before {
+    background: url('../img/backg1.jpg') no-repeat center center/cover;
+    opacity: 0.4;
+} */
+
+#services .box {
+    /* margin-top: 5px; */
+    border: 2px solid brown;
+    margin: 2px 25px;
+    padding: 35px;
+    border-radius: 33px;
+    background-color: rgb(212 201 201);
+
+}
+
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+/* Clients Section  */
+
+#client-section::before {
+    content: "";
+    background: url('../img/vegetable.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 48%;
+    width: 100%;
+    /* top: 0px;
+    left: 0px; */
+    z-index: -1;
+    opacity: 0.4;
+
+
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 268px;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+#clients img {
+    height: 77px;
+}
+
+/* contact us */
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url('../img/contact-us.jpg') no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+}
+
+/* footer */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 7px 20px;
+}
+
+/* Utility classes */
+
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'EB Garamond', serif;
+}
+
+.h-secondary {
+    font-family: 'Tilt Warp', cursive;
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6PX 15PX;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    border-radius: 14px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
